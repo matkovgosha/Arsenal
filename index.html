@@ -7,35 +7,47 @@
 
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        
+        <!-- Только если есть папка с node_modules ?? 
+        <link rel="stylesheet" href="../node_modules/swiper/css/swiper.min.css">
+        <script src="../node_modules/swiper/js/swiper.min.js"></script>  
+        -->
+        
+        <!-- CDN подключение библиотеки слайдера -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+
     </head>
     <body>
         <header class="header">
             <div class="wrapper">
                 <nav class="main-menu">
-                    <a class="main-menu__item is-active">
+                    <a class="main-menu__item is-active js-menu-link" href="#about-company">
                         О компании
                     </a>
-                    <a class="main-menu__item">
+                    <a class="main-menu__item js-menu-link" href="#gallery">
                         Фотогалерея
                     </a>
-                    <a class="main-menu__item">
+                    <a class="main-menu__item js-menu-link" href="#calculator">
                         Калькулятор услуг
                     </a>
-                    <a class="main-menu__item">
+                    <a class="main-menu__item js-menu-link" href="#director">
                         Наш директор
                     </a>
-                    <a class="main-menu__item">
+                    <a class="main-menu__item js-menu-link" href="#requisites">
                         Наши реквизиты
                     </a>
-                    <a class="main-menu__item">
+                    <a class="main-menu__item js-menu-link" href="#сontacts">
                         Контакты
                     </a>                    
                 </nav>
             </div>
         </header>
 
-        <section class="main-screen">
+        <section class="landing-section main-screen">
             <div class="wrapper main-screen__wrapper">
                 <span class="main-screen__logo">
                     <svg width="224" height="104" viewBox="0 0 224 104" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +72,7 @@
         </section>
 
         <div class="wrapper">
-            <section class="about-company">
+            <section class="landing-section about-company" id="about-company">
                 <div class="about-company__container">
                     <ul class="about-company__items">
                         <li class="about-company__item">
@@ -92,6 +104,42 @@
                     </div>
                 </div>
             </section> 
+
+            <section class="landing-section gallery" id="gallery">
+                <div class="gallery__slider">
+                    <div class="swiper-container gallery-top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-color: red"></div>
+                            <div class="swiper-slide" style="background-color: orange"></div>
+                            <div class="swiper-slide" style="background-color: green"></div>
+                            <div class="swiper-slide" style="background-color: blue"></div>
+                            <div class="swiper-slide" style="background-color: grey"></div>
+                            <div class="swiper-slide" style="background-color: purple"></div>
+                            <div class="swiper-slide" style="background-color: pink"></div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next swiper-button-white"></div>
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                    </div>
+                    <div class="swiper-container gallery-thumbs">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-color: red"></div>
+                            <div class="swiper-slide" style="background-color: orange"></div>
+                            <div class="swiper-slide" style="background-color: green"></div>
+                            <div class="swiper-slide" style="background-color: blue"></div>
+                            <div class="swiper-slide" style="background-color: grey"></div>
+                            <div class="swiper-slide" style="background-color: purple"></div>
+                            <div class="swiper-slide" style="background-color: pink"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="landing-section calculator" id="calculator">
+                Калькулятор
+            </section>
+
+
         </div>
     </body>
 </html>
