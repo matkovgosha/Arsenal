@@ -8,15 +8,6 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
         
-        <!-- Только если есть папка с node_modules ?? 
-        <link rel="stylesheet" href="../node_modules/swiper/css/swiper.min.css">
-        <script src="../node_modules/swiper/js/swiper.min.js"></script>  
-        -->
-        
-        <!-- CDN подключение библиотеки слайдера -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
 
@@ -25,43 +16,55 @@
         <header class="header">
             <div class="wrapper">
                 <nav class="main-menu">
-                    <a class="main-menu__item is-active js-menu-link" href="#about-company">
+                    <span class="main-menu__logo">
+                        <svg width="91" height="48" viewBox="0 0 91 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.8477 46.8097H34.6412H35.2165V29.9468H44.4213V46.8097H47.0101V29.9468H56.2148V46.8097H68.2961V14.0385H71.1725L45.5719 0.993652L19.9712 14.0385H22.8477V46.8097Z" stroke="white" stroke-width="0.8"/>
+                        <path d="M19 46.3681V17.6096H1V44.7375V46.3681H5.032H7.048V37.1773L10.072 34.8054L12.808 37.1773V46.3681H19Z" stroke="white" stroke-width="0.8"/>
+                        <path d="M90 46.3681V17.6096H72V44.7375V46.3681H76.032H78.048V37.1773L81.072 34.8054L83.808 37.1773V46.3681H90Z" stroke="white" stroke-width="0.8"/>
+                        <rect x="8.30332" y="28.4378" width="3.51472" height="2.69983" stroke="white" stroke-width="0.8"/>
+                        <rect x="79.3258" y="28.4378" width="3.51473" height="2.69983" stroke="white" stroke-width="0.8"/>
+                        <path d="M39.8188 29.9473V46.9692" stroke="white" stroke-width="0.8"/>
+                        <path d="M51.6123 29.9473V46.9692" stroke="white" stroke-width="0.8"/>
+                        <path d="M35.2168 38.5371H44.4215" stroke="white" stroke-width="0.8"/>
+                        <path d="M47.0098 38.5371H56.2145" stroke="white" stroke-width="0.8"/>
+                        </svg>
+                    </span>
+                    <a class="main-menu__item" href="#about-company">
                         О компании
                     </a>
-                    <a class="main-menu__item js-menu-link" href="#gallery">
+                    <a class="main-menu__item" href="#gallery">
                         Фотогалерея
                     </a>
-                    <a class="main-menu__item js-menu-link" href="#calculator">
+                    <a class="main-menu__item" href="#calculator">
                         Калькулятор услуг
                     </a>
-                    <a class="main-menu__item js-menu-link" href="#director">
+                    <a class="main-menu__item" href="#director">
                         Наш директор
                     </a>
-                    <a class="main-menu__item js-menu-link" href="#requisites">
+                    <a class="main-menu__item" href="#requisites">
                         Наши реквизиты
                     </a>
-                    <a class="main-menu__item js-menu-link" href="#contacts">
+                    <a class="main-menu__item" href="#contacts">
                         Контакты
                     </a>                    
                 </nav>
+                <div class="mobile-menu">
+                    <div class="mobile-menu__row">
+                            <svg width="9" height="32" viewBox="0 0 9 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="4.5" cy="4.57143" rx="4.5" ry="4.57143" fill="white"/>
+                                <ellipse cx="4.5" cy="27.4286" rx="4.5" ry="4.57143" fill="white"/>
+                                <ellipse cx="4.5" cy="15.9999" rx="4.5" ry="4.57143" fill="white"/>
+                            </svg>
+                        <p class="mobile-menu__title">
+                            О компании
+                        </p>
+                    </div>
+                    <hr>
+                </div>
             </div>
         </header>
-
         <section class="landing-section main-screen">
             <div class="wrapper main-screen__wrapper">
-                <span class="main-screen__logo">
-                    <svg width="224" height="104" viewBox="0 0 224 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M53.2127 102.647H83.6896H85.1762V65.4878H108.963V102.647H115.653V65.4878H139.44V102.647H170.66V30.4319H178.094L111.936 1.68608L45.7793 30.4319H53.2127V102.647Z" stroke="black" stroke-width="2"/>
-                        <path d="M47.4587 102.647V34.6386H1V98.7909V102.647H11.4067H16.6101V80.9124L24.4152 75.3034L31.4769 80.9124V102.647H47.4587Z" stroke="black" stroke-width="2"/>
-                        <path d="M222.5 102.647V34.6386H176.042V98.7909V102.647H186.448H191.652V80.9124L199.457 75.3034L206.518 80.9124V102.647H222.5Z" stroke="black" stroke-width="2"/>
-                        <rect x="19.8403" y="62.2811" width="9.15008" height="5.7123" stroke="black" stroke-width="2"/>
-                        <rect x="194.882" y="62.2811" width="9.15008" height="5.7123" stroke="black" stroke-width="2"/>
-                        <path d="M97.0698 65.4878V102.998" stroke="black" stroke-width="2"/>
-                        <path d="M127.547 65.4878V102.998" stroke="black" stroke-width="2"/>
-                        <path d="M85.1763 84.418H108.963" stroke="black" stroke-width="2"/>
-                        <path d="M115.652 84.418H139.439" stroke="black" stroke-width="2"/>      <!-- Сделать нормальный импорт свг-->
-                    </svg>
-                </span>
                 <span class="main-screen__title">
                     ООО Арсенал - А 
                 </span>
@@ -74,6 +77,9 @@
         <div class="wrapper">
             <section class="landing-section about-company" id="about-company">
                 <div class="about-company__container">
+                    <div class="about-company__mobile-title"> 
+                        ООО "Арсенал - А"
+                    </div>
                     <ul class="about-company__items">
                         <li class="about-company__item">
                             <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,33 +112,7 @@
             </section> 
 
             <section class="landing-section gallery" id="gallery">
-                <div class="gallery__slider">
-                    <div class="swiper-container gallery-top">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-color: red"></div>
-                            <div class="swiper-slide" style="background-color: orange"></div>
-                            <div class="swiper-slide" style="background-color: green"></div>
-                            <div class="swiper-slide" style="background-color: blue"></div>
-                            <div class="swiper-slide" style="background-color: grey"></div>
-                            <div class="swiper-slide" style="background-color: purple"></div>
-                            <div class="swiper-slide" style="background-color: pink"></div>
-                        </div>
-                        <!-- Add Arrows -->
-                        <div class="swiper-button-next swiper-button-white"></div>
-                        <div class="swiper-button-prev swiper-button-white"></div>
-                    </div>
-                    <div class="swiper-container gallery-thumbs">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-color: red"></div>
-                            <div class="swiper-slide" style="background-color: orange"></div>
-                            <div class="swiper-slide" style="background-color: green"></div>
-                            <div class="swiper-slide" style="background-color: blue"></div>
-                            <div class="swiper-slide" style="background-color: grey"></div>
-                            <div class="swiper-slide" style="background-color: purple"></div>
-                            <div class="swiper-slide" style="background-color: pink"></div>
-                        </div>
-                    </div>
-                </div>
+                Галерея
             </section>
 
             <section class="landing-section calculator" id="calculator">
@@ -143,16 +123,35 @@
             <section class="landing-section director" id="director">
                 <div class="director__container">
                     <div class="director__photo">
+<!--                         <div class="director__photo-inner-circle"></div> -->
                         <img src="img/director.png">
                     </div>
+                    <div class="director__mobile-title">
+                        Гудак Дмитрий Ласлович
+                    </div>
                     <div class="director__desc">
-                        <h3 class="director__desc-title">
-                            Гудак Дмитрий Ласлович
-                        </h3>
                         <div class="director__desc-text">
-                            Художественный стиль – это особый стиль речи, который получил широкое распространение как в мировой художественной литературе в целом, так и в копирайтинге в частности.
+                            Основным направлением деятельности 
+                            компании является проектирование и 
+                            строительство жилых домов и коттеджей, а 
+                            также обустройство придомовых территорий.
+                            Также мы выполняем работы по строительству 
+                            внутренних и наружных инженерных сетей, 
+                            монтажу и пуско-наладке систем 
+                            автоматизации технологических процессов и 
+                            управления любой сложности.
                             <br>
-                            Он характеризуется высокой эмоциональностью, прямой речью, богатством красок, эпитетов и метафор, а также призван воздействовать на воображение читателя и выступает в роли спускового крючка для его фантазии.
+                            К нам обращаются, чтобы заказать проект 
+                            объекта под ключ или сэкономить на нём, 
+                            выбрав готовый вариант с оригинальными 
+                            доработками.
+                            <br>
+                            Готовы представлять интересы заказчика при 
+                            взаимодействии с ресурсо снабжающими 
+                            организациями.
+                            <br>
+                            На сегодняшний день закончено 
+                            строительство более 20 проектов.
                         </div>
                     </div>
                 </div>
@@ -212,12 +211,69 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="requisites__content requisites__mobile-content">
+                    <div class="requisites__company-name">
+                        ООО “Арсенал - А”
+                    </div>
+                    <div class="requisites__row">
+                        <div class="requisites__col">
+                            <div class="requisites__item">
+                                <p class="requisites__item-title">ОГРН</p>
+                                <p class="requisites__item-desc underline">1179102022406</p>     
+                            </div>
+                            <div class="requisites__item">
+                                <p class="requisites__item-title">Код КЛАДР</p>
+                                <p class="requisites__item-desc underline">910000110000065</p>     
+                            </div>
+                            <div class="requisites__item">
+                                <p class="requisites__item-title">Код ОПФ</p>
+                                <p class="requisites__item-desc">
+                                    <span class="underline">12300</span> (Общества с ограниченной остветственностью)
+                                </p>     
+                            </div>  
+                        </div>
+                        <div class="requisites__col">
+                            <div class="requisites__item">
+                                <p class="requisites__item-title">ИНН / КПП</p>
+                                <p class="requisites__item-desc">
+                                    <span class="underline">9103085965</span> / <span class="underline">910301001</span>
+                                </p>     
+                            </div>
+                            <div class="requisites__item">
+                                <p class="requisites__item-title">Код ОКПО</p>
+                                <p class="requisites__item-desc underline">19441089</p>     
+                            </div>
+                            <div class="requisites__item">
+                                <p class="requisites__item-title">Код ОКФС</p>
+                                <p class="requisites__item-desc">
+                                    <span class="underline">12300</span> (Частная собственность)
+                                </p>     
+                            </div>
+                        </div>
+                    </div>
+                    <div class="requisites__full-width-col">
+                        <div class="requisites__item requisites__full-width-item">
+                            <p class="requisites__item-title">Дата регистрации</p>
+                            <p class="requisites__item-desc">7 сентября 2017 года</p>     
+                        </div>
+                        <div class="requisites__item requisites__full-width-item">
+                            <p class="requisites__item-title">Статус</p>
+                            <p class="requisites__item-desc">Действует (3 года на рынке)</p>     
+                        </div>                            
+                        <div class="requisites__item requisites__full-width-item">
+                            <p class="requisites__item-title">Вид деятельности</p>
+                            <p class="requisites__item-desc">Строительство жилых и нежилых зданий</p>     
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section class="landing-section contacts" id="contacts">
+            <section class="contacts" id="contacts">
                 <div class="contacts__map">
                     <img src="img/contacts_map.png">
                 </div>
+                <hr>
                 <div class="contacts__info">
                     <div class="contacts__address">
                         <p class="contacts__address-title">
@@ -245,7 +301,7 @@
                                 8 800 000 00 00  
                             </p>       
                         </div>
-                        <div class="contacts__col">
+                        <div class="contacts__col contacts__col--mobile-none">
                             <p class="contacts__col-title">
                                 Instagram   
                             </p>
@@ -253,11 +309,46 @@
                                 instagram.com/ofkoekht  
                             </p>       
                         </div>                        
-                    </div> 
-                        
-                </div>                    
+                    </div>    
+                </div>
+                <hr class="mb-30">                    
             </section>
-
         </div>
+        <!-- Боковое мобильное меню; стили в base.less -->
+<!--         <div class="aside-menu">
+            <nav class="aside-menu__items">
+                <span class="aside-menu__logo">
+                    <svg width="91" height="48" viewBox="0 0 91 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.8477 46.8097H34.6412H35.2165V29.9468H44.4213V46.8097H47.0101V29.9468H56.2148V46.8097H68.2961V14.0385H71.1725L45.5719 0.993652L19.9712 14.0385H22.8477V46.8097Z" stroke="black" stroke-width="0.8"/>
+                    <path d="M19 46.3681V17.6096H1V44.7375V46.3681H5.032H7.048V37.1773L10.072 34.8054L12.808 37.1773V46.3681H19Z" stroke="black" stroke-width="0.8"/>
+                    <path d="M90 46.3681V17.6096H72V44.7375V46.3681H76.032H78.048V37.1773L81.072 34.8054L83.808 37.1773V46.3681H90Z" stroke="black" stroke-width="0.8"/>
+                    <rect x="8.30332" y="28.4378" width="3.51472" height="2.69983" stroke="black" stroke-width="0.8"/>
+                    <rect x="79.3258" y="28.4378" width="3.51473" height="2.69983" stroke="black" stroke-width="0.8"/>
+                    <path d="M39.8188 29.9473V46.9692" stroke="black" stroke-width="0.8"/>
+                    <path d="M51.6123 29.9473V46.9692" stroke="black" stroke-width="0.8"/>
+                    <path d="M35.2168 38.5371H44.4215" stroke="black" stroke-width="0.8"/>
+                    <path d="M47.0098 38.5371H56.2145" stroke="black" stroke-width="0.8"/>
+                    </svg>
+                </span>
+                <a class="aside-menu__item" href="#about-company">
+                    О компании
+                </a>
+                <a class="aside-menu__item" href="#gallery">
+                    Фотогалерея
+                </a>
+                <a class="aside-menu__item" href="#calculator">
+                    Калькулятор услуг
+                </a>
+                <a class="aside-menu__item" href="#director">
+                    Наш директор
+                </a>
+                <a class="aside-menu__item" href="#requisites">
+                    Наши реквизиты
+                </a>
+                <a class="aside-menu__item" href="#contacts">
+                    Контакты
+                </a>                    
+            </nav>
+        </div> -->
     </body>
 </html>
